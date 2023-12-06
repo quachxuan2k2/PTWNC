@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Exam.Site1" %>
+
+<%@ Register src="UserControl1.ascx" tagname="UserControl1" tagprefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link href="CSS/Style.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+        
+        .auto-style2 {
+            width: 100%;
+            height: 120px;
+        }
+        .auto-style1 {
+            width: 100%;
+            height: 30px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <center>
+        <div class="face">
+         <div class="banner_menu">
+             <div > <!-- có ảnh banner-->
+                 <img src="imgs/Nen_banner.jpg" class="auto-style2" />
+             </div>
+             <div > <!-- gồm có navbar đè lên ảnh-->
+                 <div class="navbar"> <!-- khối menu-->
+                   <center style="margin-top:5px; margin-left: 25px; text-align:center;">
+                     <a href="#" style="color:white;">Trang chủ</a> &nbsp;
+                     <a href="#" style="color:white;">Giới thiệu</a> &nbsp;
+                     <a href="#" style="color:white;">Sản phẩm</a> &nbsp;
+                     <a href="#" style="color:white;">Đăng nhập</a> &nbsp;
+                     <a href="#" style="color:white;">Đăng ký</a> &nbsp;
+                    </center>
+                 </div>
+                 <div> <!-- Ảnh menu_top-->
+                     <img src="imgs/bg_menu_top.jpg" class="auto-style1" />
+                 </div>
+             </div>
+         </div>
+          <div class="container">
+            <div class="left">
+                <center><h3>Chủ đề sách</h3></center>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="center">
+                
+                <img src="imgs/tittle_sachmoi.gif" /> <br />
+                <p style="text-align:left;">
+                <img src="imgs/muitendo.gif" /> Tiền tệ, Ngân Hàng, Thị Trường Tài Chính. <br />
+                </p>
+                <p style="text-align:left;">
+                <img src="imgs/muitendo.gif" /> Hướng dẫn Tự Học PhotoShop CS (Photoshop 8.0). <br />
+                </p>
+                <p style="text-align:left;">
+                <img src="imgs/muitendo.gif" /> Thành Thạo Oracle 9i - Quản Trị Cơ Sở Dữ Liệu. <br />
+                </p>
+                <p style="text-align:left;">
+                <img src="imgs/muitendo.gif" /> Nhập Môn Microsoft Windows XP. <br />
+                </p>
+                <p style="text-align:left;">
+                <img src="imgs/muitendo.gif" /> Thai Nghén Và Sinh Nở (Cẩm Nang Dành Cho Người Làm Cha). <br />
+                </p>
+            </div>
+            <div class="right">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+            <div class="foot">
+                <br /><br />
+                <p style="text-align:center">@2012 - Nhà sách trường Đại học công nghiệp Việt-Hung</p>
+                <p style="text-align:center">Địa chỉ:16 Xuân Khanh, Sơn Tây, Hà Nội</p>
+                <p style="text-align:center">ĐT: 098.3330.981</p>
+                
+            </div>
+             </div>
+            </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,326 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4BB2B35-4CB8-4F9B-B995-A9EF583DDFCB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Baitaplon</RootNamespace>
+    <AssemblyName>Baitaplon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44382</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dang_ky.aspx" />
+    <Content Include="Dang_nhap.aspx" />
+    <Content Include="Danh_muc_sach.aspx" />
+    <Content Include="Gio_hang.aspx" />
+    <Content Include="Hienthi_Ctsach.aspx" />
+    <Content Include="USER_CONTROL\UCDang_ky.ascx" />
+    <Content Include="USER_CONTROL\UCDang_nhap.ascx" />
+    <Content Include="USER_CONTROL\Quang_cao1.xml" />
+    <Content Include="USER_CONTROL\UCChitiet_sach.ascx" />
+    <Content Include="USER_CONTROL\UCDanh_muc.ascx" />
+    <Content Include="USER_CONTROL\UCGiohangsach.ascx" />
+    <Content Include="USER_CONTROL\UCQuangcao_2.ascx" />
+    <Content Include="USER_CONTROL\UCQuang_cao.ascx" />
+    <Content Include="USER_CONTROL\UCSach_ban_chay.ascx" />
+    <Content Include="USER_CONTROL\UCGiohang.ascx" />
+    <Content Include="USER_CONTROL\UCBookNew.ascx" />
+    <Content Include="USER_CONTROL\UCChu_de.ascx" />
+    <Content Include="CSS\CSS.css" />
+    <Content Include="imgs\bg_menu_top.jpg" />
+    <Content Include="imgs\Cancel.jpg" />
+    <Content Include="imgs\Chot.jpg" />
+    <Content Include="imgs\damsen.gif" />
+    <Content Include="imgs\Delete.jpg" />
+    <Content Include="imgs\Edit.png" />
+    <Content Include="imgs\Fristi.gif" />
+    <Content Include="imgs\Giohang.gif" />
+    <Content Include="imgs\heart.jpg" />
+    <Content Include="imgs\icon_list.jpg" />
+    <Content Include="imgs\MISC26.ICO" />
+    <Content Include="imgs\MISC27.ICO" />
+    <Content Include="imgs\muitendo.gif" />
+    <Content Include="imgs\nenxanh_cottrai.gif" />
+    <Content Include="imgs\Nen_banner.jpg" />
+    <Content Include="imgs\new.jpg" />
+    <Content Include="imgs\nut_chonmua.gif" />
+    <Content Include="imgs\Omo.gif" />
+    <Content Include="imgs\QC03.gif" />
+    <Content Include="imgs\QC04.gif" />
+    <Content Include="imgs\QC_01.gif" />
+    <Content Include="imgs\QC_02.gif" />
+    <Content Include="imgs\Save.jpg" />
+    <Content Include="imgs\Sotien.gif" />
+    <Content Include="imgs\Thoitrang.gif" />
+    <Content Include="imgs\tittle_sachmoi.gif" />
+    <Content Include="imgs\Trungthu.gif" />
+    <Content Include="imgs\Upload\01.jpg" />
+    <Content Include="imgs\Upload\130318.jpg" />
+    <Content Include="imgs\Upload\130499.jpg" />
+    <Content Include="imgs\Upload\Autumn Leaves.jpg" />
+    <Content Include="imgs\Upload\Gt_Thcb.jpg" />
+    <Content Include="imgs\Upload\HaNoiCom.png" />
+    <Content Include="imgs\Upload\Humpback Whale.jpg" />
+    <Content Include="imgs\Upload\Kt.jpg" />
+    <Content Include="imgs\Upload\KT0001.jpg" />
+    <Content Include="imgs\Upload\KT0002.jpg" />
+    <Content Include="imgs\Upload\KT0003.jpg" />
+    <Content Include="imgs\Upload\KT0004.jpg" />
+    <Content Include="imgs\Upload\KT0005.jpg" />
+    <Content Include="imgs\Upload\KT0006.jpg" />
+    <Content Include="imgs\Upload\KT0007.jpg" />
+    <Content Include="imgs\Upload\KT0008.jpg" />
+    <Content Include="imgs\Upload\KT0009.jpg" />
+    <Content Include="imgs\Upload\LTWeb2005.jpg" />
+    <Content Include="imgs\Upload\Me.jpg" />
+    <Content Include="imgs\Upload\Oracle.jpg" />
+    <Content Include="imgs\Upload\Oryx Antelope.jpg" />
+    <Content Include="imgs\Upload\P0001.jpg" />
+    <Content Include="imgs\Upload\P_0001.jpg" />
+    <Content Include="imgs\Upload\QC_BEN.png" />
+    <Content Include="imgs\Upload\QC_CBV.png" />
+    <Content Include="imgs\Upload\QC_LT.png" />
+    <Content Include="imgs\Upload\Sample.jpg" />
+    <Content Include="imgs\Upload\TH001.jpg" />
+    <Content Include="imgs\Upload\TH002.jpg" />
+    <Content Include="imgs\Upload\TH003.jpg" />
+    <Content Include="imgs\Upload\TH004.jpg" />
+    <Content Include="imgs\Upload\TH005.jpg" />
+    <Content Include="imgs\Upload\TH006.jpg" />
+    <Content Include="imgs\Upload\TH007.jpg" />
+    <Content Include="imgs\Upload\TH008.jpg" />
+    <Content Include="imgs\Upload\THCB.jpg" />
+    <Content Include="imgs\Upload\TiengAnh01.jpg" />
+    <Content Include="imgs\xehang.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dang_ky.aspx.cs">
+      <DependentUpon>Dang_ky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dang_ky.aspx.designer.cs">
+      <DependentUpon>Dang_ky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dang_nhap.aspx.cs">
+      <DependentUpon>Dang_nhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dang_nhap.aspx.designer.cs">
+      <DependentUpon>Dang_nhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_muc_sach.aspx.cs">
+      <DependentUpon>Danh_muc_sach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danh_muc_sach.aspx.designer.cs">
+      <DependentUpon>Danh_muc_sach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gio_hang.aspx.cs">
+      <DependentUpon>Gio_hang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gio_hang.aspx.designer.cs">
+      <DependentUpon>Gio_hang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hienthi_Ctsach.aspx.cs">
+      <DependentUpon>Hienthi_Ctsach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hienthi_Ctsach.aspx.designer.cs">
+      <DependentUpon>Hienthi_Ctsach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDang_ky.ascx.cs">
+      <DependentUpon>UCDang_ky.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDang_ky.ascx.designer.cs">
+      <DependentUpon>UCDang_ky.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDang_nhap.ascx.cs">
+      <DependentUpon>UCDang_nhap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDang_nhap.ascx.designer.cs">
+      <DependentUpon>UCDang_nhap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCChitiet_sach.ascx.cs">
+      <DependentUpon>UCChitiet_sach.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCChitiet_sach.ascx.designer.cs">
+      <DependentUpon>UCChitiet_sach.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDanh_muc.ascx.cs">
+      <DependentUpon>UCDanh_muc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCDanh_muc.ascx.designer.cs">
+      <DependentUpon>UCDanh_muc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCGiohangsach.ascx.cs">
+      <DependentUpon>UCGiohangsach.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCGiohangsach.ascx.designer.cs">
+      <DependentUpon>UCGiohangsach.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCQuangcao_2.ascx.cs">
+      <DependentUpon>UCQuangcao_2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCQuangcao_2.ascx.designer.cs">
+      <DependentUpon>UCQuangcao_2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCQuang_cao.ascx.cs">
+      <DependentUpon>UCQuang_cao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCQuang_cao.ascx.designer.cs">
+      <DependentUpon>UCQuang_cao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCSach_ban_chay.ascx.cs">
+      <DependentUpon>UCSach_ban_chay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCSach_ban_chay.ascx.designer.cs">
+      <DependentUpon>UCSach_ban_chay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCGiohang.ascx.cs">
+      <DependentUpon>UCGiohang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCGiohang.ascx.designer.cs">
+      <DependentUpon>UCGiohang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCBookNew.ascx.cs">
+      <DependentUpon>UCBookNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCBookNew.ascx.designer.cs">
+      <DependentUpon>UCBookNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCChu_de.ascx.cs">
+      <DependentUpon>UCChu_de.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CONTROL\UCChu_de.ascx.designer.cs">
+      <DependentUpon>UCChu_de.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63742</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

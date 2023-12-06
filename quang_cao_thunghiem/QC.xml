@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/imgs/QC_01.gif</ImageUrl>
+		<NavigateUrl>https://shopee.vn/</NavigateUrl>
+		<AlternateText>Quảng cáo 1</AlternateText>
+		<Keyword>shopee</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/imgs/QC_02.gif</ImageUrl>
+		<NavigateUrl>https://vinaphone.com.vn/</NavigateUrl>
+		<AlternateText>Quảng cáo 2</AlternateText>
+		<Keyword>vinaphone</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/imgs/QC03.gif</ImageUrl>
+		<NavigateUrl>http://damsenpark.vn/</NavigateUrl>
+		<AlternateText>Quảng cáo 3</AlternateText>
+		<Keyword>damsen</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+</Advertisements>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Images/Images/Upload/QC_BEN.png</ImageUrl>
+		<NavigateUrl>https://shopee.vn/</NavigateUrl>
+		<AlternateText>QC_BEN</AlternateText>
+		<Keyword>BEN</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/Images/Upload/QC_CBV.png</ImageUrl>
+		<NavigateUrl>https://vinaphone.com.vn/</NavigateUrl>
+		<AlternateText>QC_CBV</AlternateText>
+		<Keyword>CBV</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/Images/Upload/QC_LT.png</ImageUrl>
+		<NavigateUrl>http://damsenpark.vn/</NavigateUrl>
+		<AlternateText>QC_LT</AlternateText>
+		<Keyword>LT</Keyword>
+		<Impressions>30</Impressions>
+	</Ad>
+</Advertisements>

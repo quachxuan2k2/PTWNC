@@ -1,0 +1,196 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A74A72F9-1014-4E37-AD1F-B49BC10BEB7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quang_cao_thu_nghiem</RootNamespace>
+    <AssemblyName>Quang_cao_thu_nghiem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Images\bg_menu_top.jpg" />
+    <Content Include="Images\Images\Cancel.jpg" />
+    <Content Include="Images\Images\Chot.jpg" />
+    <Content Include="Images\Images\Delete.jpg" />
+    <Content Include="Images\Images\Dongho.swf" />
+    <Content Include="Images\Images\Edit.png" />
+    <Content Include="Images\Images\Fristi.gif" />
+    <Content Include="Images\Images\Giohang.gif" />
+    <Content Include="Images\Images\heart.jpg" />
+    <Content Include="Images\Images\icon_list.jpg" />
+    <Content Include="Images\Images\MISC26.ICO" />
+    <Content Include="Images\Images\MISC27.ICO" />
+    <Content Include="Images\Images\muitendo.gif" />
+    <Content Include="Images\Images\nenxanh_cottrai.gif" />
+    <Content Include="Images\Images\Nen_banner.jpg" />
+    <Content Include="Images\Images\new.jpg" />
+    <Content Include="Images\Images\nut_chonmua.gif" />
+    <Content Include="Images\Images\Omo.gif" />
+    <Content Include="Images\Images\QC_01.gif" />
+    <Content Include="Images\Images\QC_02.gif" />
+    <Content Include="Images\Images\QC_03.gif" />
+    <Content Include="Images\Images\QC_04.gif" />
+    <Content Include="Images\Images\Save.jpg" />
+    <Content Include="Images\Images\Sotien.gif" />
+    <Content Include="Images\Images\Thoitrang.gif" />
+    <Content Include="Images\Images\tittle_sachmoi.gif" />
+    <Content Include="Images\Images\Trungthu.gif" />
+    <Content Include="Images\Images\Upload\01.jpg" />
+    <Content Include="Images\Images\Upload\130318.jpg" />
+    <Content Include="Images\Images\Upload\130499.jpg" />
+    <Content Include="Images\Images\Upload\Autumn Leaves.jpg" />
+    <Content Include="Images\Images\Upload\Gt_Thcb.jpg" />
+    <Content Include="Images\Images\Upload\HaNoiCom.png" />
+    <Content Include="Images\Images\Upload\Humpback Whale.jpg" />
+    <Content Include="Images\Images\Upload\Kt.jpg" />
+    <Content Include="Images\Images\Upload\KT0001.jpg" />
+    <Content Include="Images\Images\Upload\KT0002.jpg" />
+    <Content Include="Images\Images\Upload\KT0003.jpg" />
+    <Content Include="Images\Images\Upload\KT0004.jpg" />
+    <Content Include="Images\Images\Upload\KT0005.jpg" />
+    <Content Include="Images\Images\Upload\KT0006.jpg" />
+    <Content Include="Images\Images\Upload\KT0007.jpg" />
+    <Content Include="Images\Images\Upload\KT0008.jpg" />
+    <Content Include="Images\Images\Upload\KT0009.jpg" />
+    <Content Include="Images\Images\Upload\LTWeb2005.jpg" />
+    <Content Include="Images\Images\Upload\Me.jpg" />
+    <Content Include="Images\Images\Upload\Oracle.jpg" />
+    <Content Include="Images\Images\Upload\Oryx Antelope.jpg" />
+    <Content Include="Images\Images\Upload\P0001.jpg" />
+    <Content Include="Images\Images\Upload\P_0001.jpg" />
+    <Content Include="Images\Images\Upload\QC_BEN.png" />
+    <Content Include="Images\Images\Upload\QC_CBV.png" />
+    <Content Include="Images\Images\Upload\QC_LT.png" />
+    <Content Include="Images\Images\Upload\Sample.jpg" />
+    <Content Include="Images\Images\Upload\TH001.jpg" />
+    <Content Include="Images\Images\Upload\TH002.jpg" />
+    <Content Include="Images\Images\Upload\TH003.jpg" />
+    <Content Include="Images\Images\Upload\TH004.jpg" />
+    <Content Include="Images\Images\Upload\TH005.jpg" />
+    <Content Include="Images\Images\Upload\TH006.jpg" />
+    <Content Include="Images\Images\Upload\TH007.jpg" />
+    <Content Include="Images\Images\Upload\TH008.jpg" />
+    <Content Include="Images\Images\Upload\THCB.jpg" />
+    <Content Include="Images\Images\Upload\TiengAnh01.jpg" />
+    <Content Include="Images\Images\xehang.gif" />
+    <Content Include="qc.aspx" />
+    <Content Include="qc.xml" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qc.aspx.cs">
+      <DependentUpon>qc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="qc.aspx.designer.cs">
+      <DependentUpon>qc.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64202</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44359/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

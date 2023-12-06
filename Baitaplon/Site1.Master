@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Baitaplon.Site1" %>
+
+
+<%@ Register src="~/USER_CONTROL/UCChu_de.ascx" tagname="UCChu_de" tagprefix="uc1" %>
+
+
+<%@ Register src="~/USER_CONTROL/UCBookNew.ascx" tagname="UCBookNew" tagprefix="uc2" %>
+
+
+<%@ Register src="USER_CONTROL/UCSach_ban_chay.ascx" tagname="UCSach_ban_chay" tagprefix="uc3" %>
+<%@ Register src="USER_CONTROL/UCGiohang.ascx" tagname="UCGiohang" tagprefix="uc4" %>
+<%@ Register Src="~/USER_CONTROL/UCGiohang.ascx" TagPrefix="uc1" TagName="UCGiohang" %>
+
+
+
+<%@ Register src="USER_CONTROL/UCQuang_cao.ascx" tagname="UCQuang_cao" tagprefix="uc5" %>
+
+
+
+<%@ Register src="USER_CONTROL/UCQuangcao_2.ascx" tagname="UCQuangcao_2" tagprefix="uc6" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link href="CSS/CSS.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+        
+        
+        a{
+            text-decoration:none;
+        }
+  
+    </style>
+    
+</head>
+<body style="background-color:darkslategrey;">
+    <form id="form1" runat="server">
+        <center>
+        <div class="face" style="background-color:white;border:1px solid green;">
+         <div class="banner_menu">
+             <div  style="position:relative;"> <!-- có ảnh banner-->
+                 <img src="imgs/Nen_banner.jpg" style="width: 100%; height: 120px;" />
+                 <img src="imgs/QC04.gif" style="position:absolute; right:0; top:30px; width:60%; height:90px;"/>
+             </div>
+             <div > <!-- gồm có navbar-->
+                 <div class="navbar"> <!-- khối menu-->
+                   <center style="margin-top:5px; margin-left: 25px; text-align:center;">
+                     <a href="Danh_muc_sach.aspx" style="color:white;">Trang chủ</a> &nbsp;
+                     <a href="Gio_hang.aspx" style="color:white;">Giỏ hàng</a> &nbsp;
+                     <a href="Hienthi_Ctsach.aspx" style="color:white;">Chi tiết sản phẩm</a> &nbsp;
+                     <a href="Dang_nhap.aspx" style="color:white;">Đăng nhập</a> &nbsp;
+                     <a href="Dang_ky.aspx" style="color:white;">Đăng ký</a> &nbsp;
+
+                    </center>
+                 </div>
+                 <div> <!-- Ảnh menu_top-->
+                     <img src="imgs/bg_menu_top.jpg" style="width: 100%;height: 30px;" />
+                 </div>
+             </div>
+         </div>
+          <div class="container">
+            <div class="left">
+                <center><h3>Chủ đề sách</h3>
+                    <uc1:UCChu_de ID="UCChu_de1" runat="server" />
+                    <br /></center>
+                
+            </div>
+            <div class="center">
+                <div>
+                <img src="imgs/tittle_sachmoi.gif" style="width:100%; height:60px;"/> 
+                </div>
+                <div >
+                <uc2:UCBookNew ID="UCBookNew1" runat="server"/>
+                </div>
+                <br />
+                <div >
+
+                    <uc5:UCQuang_cao ID="UCQuang_cao1" runat="server" />
+                </div>
+                <div class="content"> <!-- nội dung chính thay đổi theo các trang-->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="right">
+                <div > <!-- thông tin giỏ hàng-->
+                  <uc1:UCGiohang runat="server" ID="UCGiohang" />
+                </div><br />
+                <div style="width:100%;"> <!-- quảng cáo 2-->
+                    
+                    
+                    <uc6:UCQuangcao_2 ID="UCQuangcao_21" runat="server" />
+                    
+                    
+                </div>
+                <div class="sachbanchay"> <!-- Danh mục sách bán chạy-->
+                    <center><b>Danh mục sách bán chạy</b></center>
+                    <uc3:UCSach_ban_chay ID="UCSach_ban_chay1" runat="server" />
+                  
+                </div>
+            </div>
+        </div>
+            <div class="foot">
+                <br /><br />
+                <p style="text-align:center">@2012 - Nhà sách trường Đại học công nghiệp Việt-Hung</p>
+                <p style="text-align:center">Địa chỉ:16 Xuân Khanh, Sơn Tây, Hà Nội</p>
+                <p style="text-align:center">ĐT: 098.3330.981</p>
+                
+            </div>
+             </div>
+            </center>
+    </form>
+</body>
+</html>
